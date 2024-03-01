@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Search</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="search-container">
+  <div class="logo">Google</div>
+  <input type="text" id="searchInput" class="search-input" onkeypress="searchOnEnter(event)">
+  <button onclick="searchOnGoogle()" class="search-button">Search</button>
+</div>
+
+<script>
+function searchOnGoogle() {
+  var searchQuery = document.getElementById("searchInput").value;
+  var searchURL = "https://www.google.com/search?q=" + encodeURIComponent(searchQuery);
+  window.open(searchURL, "_blank");
+}
+
+function searchOnEnter(event) {
+  if (event.key === "Enter") {
+    searchOnGoogle();
+  }
+}
+</script>
+
+</body>
+</html>

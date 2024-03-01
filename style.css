@@ -1,0 +1,71 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #c2e8f7;
+    padding: 20px;
+  }
+  
+  /* Search Container Styles */
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center; /* Center-aligning all text */
+  }
+  
+  /* Logo Styles */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Search Input Styles */
+  .search-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    outline: none;
+    box-shadow: none;
+    margin-bottom: 10px; /* Add space below input */
+  }
+  
+  /* Search Button Styles */
+  .search-button {
+    width: 80px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #5f6368;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px; /* Add space between input and button */
+    transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+  }
+  
+  .search-button:hover {
+    background-color: #f1f3f4; /* Change background color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .search-container {
+      padding: 0 20px; /* Add padding to the search container on smaller screens */
+    }
+    
+    .search-input {
+      width: 100%; /* Make the search input full width on smaller screens */
+    }
+  }
+  
